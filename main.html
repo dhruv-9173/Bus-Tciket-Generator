@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        
+        <div> 
+            <input type="text" id="search" oninput="searchbusbyname()" onfocus="show(document.getElementById('results'))" onblur="hide()" placeholder="Search Buses">
+            <div id="search-res"></div>
+        </div>
+        
+        <ul type="none">
+            <li><button onclick="AllBus()" class="button">All Buses</button></li>
+            <li><button onclick="show(document.getElementById('main'),document.getElementById('outer'))"  class="button">Home</button></li>
+            <li><button  class="button">Contact Us</button></li>
+        </ul>
+
+    </header>
+
+    <main id="main">
+        
+        <div id="f1">
+            
+                <input type="text" placeholder="From" id="from" required>
+                <p>To</p>
+                <input type="text" placeholder="destination" id="des" required>
+                <input type="submit" value="Check Available Buses" id="submit" onclick="searchbusbyroute()">
+           
+        </div>
+        
+        <div id="results" class="a">
+            
+        </div>
+        
+        <div id="re">
+           <div id="cap">Results</div>
+        </div>
+   
+    </main>
+    
+    <div id="Ticket">
+        <h1>Bus Ticket</h1>
+        <h2>Seat No: <span  
+            id="seat"></span></h2>
+        From: <span
+        id="from"></span> To Destination: <span  
+        id="d"></span> <br>
+        Bus Name: <span 
+        id="bname"></span><br>
+        Passenger Name: <span id="pname"></span><br>
+        Mobile No: <span id="Mnum"></span> <br>
+        Cost:<span id="cost"></span><br>
+        Total number of seats: <span id="nos"></span>
+    
+    <button id="gb" onclick="show(document.getElementById('main'),document.getElementById('Ticket'))">Go Back</button>
+    </div>
+    <div id="outer">
+        Bus: <span id="bus"></span><br><br>
+        Enter Name: <input class="input" type="text" placeholder="Name" id="nme"> <br><br>
+        Enter Mobile Number:
+        <input type="text" class="input" placeholder="Mobile Number" id="m"><br><br>
+        Total Seats Chosen: <span id="n"></span><br><br>
+        Seats: <span id="s"></span>
+       
+    <h1>Choose Seat</h1>
+    <div  
+    id="BusSeating">
+        <div class="seats" onclick="seatschose(this,1)" 
+        id="1">1</div>   
+        <div class="seats" onclick="seatschose(this,2)" 
+        id="2">2</div> 
+        <div></div>
+        <div class="seats" onclick="seatschose(this,3)" 
+        id="3">3</div> 
+        <div class="seats" onclick="seatschose(this,4)" 
+        id="4">4</div> 
+        <div class="seats" onclick="seatschose(this,5)" 
+        id="5">5</div> 
+        <div class="seats" onclick="seatschose(this,6)"
+        id="6">6</div>   
+        <div  class="seats" onclick="seatschose(this,7)"
+        id="7">7</div> 
+        <div></div>
+        <div class="seats" onclick="seatschose(this,8)"
+        id="8">8</div> 
+        <div class="seats" onclick="seatschose(this,9)"
+        id="9">9</div> 
+        <div class="seats" onclick="seatschose(this,10)"
+        id="10">10</div> 
+        <div class="seats" onclick="seatschose(this,11)"
+        id="11">11</div>   
+        <div class="seats" onclick="seatschose(this,12)"
+        id="12">12</div> 
+        <div></div>
+        <div class="seats" onclick="seatschose(this,13)"
+        id="13">13</div> 
+        <div class="seats" onclick="seatschose(this,14)"
+        id="14">14</div> 
+        <div class="seats" onclick="seatschose(this,15)"
+        id="15">15</div> 
+        <div class="seats" onclick="seatschose(this,16)"
+        id="16">16</div>   
+        <div class="seats" onclick="seatschose(this,17)"
+        id="17">17</div> 
+        <div></div>
+        <div class="seats" onclick="seatschose(this,18)"
+        id="18">18</div> 
+        <div class="seats" onclick="seatschose(this,19)"
+        id="19">19</div> 
+        <div class="seats" onclick="seatschose(this,20)"
+        id="20">20</div> 
+        <div class="seats" onclick="seatschose(this,21)"
+        id="21">21</div>   
+        <div class="seats" onclick="seatschose(this,22)"
+        id="22">22</div> 
+        <div></div>
+        <div class="seats" onclick="seatschose(this,23)"
+        id="23">23</div> 
+        <div class="seats" onclick="seatschose(this,24)"
+        id="24">24</div> 
+        <div class="seats" onclick="seatschose(this,25)"
+        id="25">25</div> 
+        <div class="seats" onclick="seatschose(this,26)"
+        id="26">26</div>   
+        <div class="seats" onclick="seatschose(this,27)"
+        id="27">27</div> 
+        <div></div>
+        <div class="seats" onclick="seatschose(this,28)"
+        id="28">28</div> 
+        <div class="seats" onclick="seatschose(this,29)"
+        id="29">29</div> 
+        <div class="seats" onclick="seatschose(this,30)"
+        id="30">30</div> 
+        <div class="seats" onclick="seatschose(this,31)"
+        id="31">31</div>   
+        <div class="seats" onclick="seatschose(this,32)"
+        id="32">32</div> 
+        <div></div>
+        <div class="seats" onclick="seatschose(this,33)"
+        id="33">33</div> 
+        <div class="seats" onclick="seatschose(this,34)"
+        id="34">34</div> 
+        <div class="seats" onclick="seatschose(this,35)"
+        id="35">35</div> 
+        <div class="seats" onclick="seatschose(this,36)"
+        id="36">36</div>   
+        <div class="seats" onclick="seatschose(this,37)"
+        id="37">37</div> 
+        <div></div>
+        <div class="seats" onclick="seatschose(this,38)"
+        id="38">38</div> 
+        <div class="seats" onclick="seatschose(this,39)"
+        id="39">39</div> 
+        <div class="seats" onclick="seatschose(this,40)"
+        id="40">40</div> 
+        <div class="seats" onclick="seatschose(this,41)"
+        id="41">41</div>   
+        <div class="seats" onclick="seatschose(this,42)"
+        id="42">42</div> 
+        <div></div>
+        <div class="seats" onclick="seatschose(this,43)"
+        id="43">43</div> 
+        <div class="seats" onclick="seatschose(this,44)"
+        id="44">44</div> 
+        <div class="seats" onclick="seatschose(this,45)"
+        id="45">45</div> 
+        <div class="seats" onclick="seatschose(this,46)"
+        id="46">46</div>   
+        <div class="seats" onclick="seatschose(this,47)"
+        id="47">47</div> 
+        <div></div>
+        <div class="seats" onclick="seatschose(this,48)"
+        id="48">48</div> 
+        <div class="seats" onclick="seatschose(this,49)"
+        id="49">49</div> 
+        <div class="seats" onclick="seatschose(this,50)"
+        id="50">50</div> 
+       
+    </div>
+    <button onclick="genticket()">Book Ticket</button>
+    <button id="gb" onclick="show(document.getElementById('main'),document.getElementById('outer'))">Go Back</button>
+    </div>
+</body>
+</html>
