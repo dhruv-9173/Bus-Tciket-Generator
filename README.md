@@ -75,8 +75,8 @@ We welcome contributions to the Bus Management System! To contribute, follow the
 
 If you have any questions or need further assistance, feel free to contact the project maintainer:
 
-- **Name**: Dhruv
-- **Email**: dhruv@example.com
+- **Name**: Dhruv Kumar
+- 
 - **GitHub**: [dhruv-9173](https://github.com/dhruv-9173)
 
 Thank you for using the Bus Management System!
